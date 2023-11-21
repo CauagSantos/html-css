@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link</title>
+  <style>
+    /*  ESLETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        ::= pseudo-element
+        > = clildren
+    */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:visited{
+  
+  color: rgb(255, 38, 0);
+}
+a:hover{
+  color: black;
+}
+a:active{
+  color: yellow;
+}
+a::after{
+  content: ' [link] ';
+  text-decoration: none;
+  font-weight: normal;
+  color: darkgray;
+}
+.especial{
+  background-color: aqua;
+}
+.especial::before{
+  content:'==>';
+}
+.especial::after{
+  content: '<==';
+  
+}
+  </style>
+</head>
+<body>
+  <h1>Perdonalizando Link</h1>
+  <ul>
+    <li> <a href="#">Repodsitorio Github</a></li> 
+    <li><a href="#" class="especial">canal do Youtube</a></li>
+    <li><a href="#" class="especial">Siat de Cursoemvideo</a></li>
+  </ul>
+</body>
+</html>
